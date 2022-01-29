@@ -1,0 +1,160 @@
+[[execs]]
+filename = "barbershop.py"
+tests = [{ testcase = "all", expect = "AC" }]
+[execs.overwrite]
+prob_id = "barbershop"
+compile = "echo 'OAO'"
+execute = "/usr/bin/env python3 barbershop.py"
+
+[[execs]]
+filename = "barbershop_nosort.py"
+tests = [{ testcase = "all", expect = "WA" }]
+[execs.overwrite]
+prob_id = "barbershop"
+compile = "echo 'OAO'"
+execute = "/usr/bin/env python3 barbershop_nosort.py"
+
+[[execs]]
+filename = "bus.cpp"
+overwrite = { prob_id = "bus" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "bus_double.cpp"
+overwrite = { prob_id = "bus" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "bus_lonly.cpp"
+overwrite = { prob_id = "bus" }
+tests = [{ testcase = "all", expect = "WA" }]
+
+[[execs]]
+filename = "bus_nodot_check.cpp"
+overwrite = { prob_id = "bus" }
+tests = [{ testcase = "all", expect = "WA" }]
+
+[[execs]]
+filename = "bus_ponly.cpp"
+overwrite = { prob_id = "bus" }
+tests = [{ testcase = "all", expect = "WA" }]
+
+[[execs]]
+filename = "busker_spfa.cpp"
+overwrite = { prob_id = "busker" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "busker_spfa_positive.cpp"
+overwrite = { prob_id = "busker" }
+tests = [
+  { testcase = "1", expect = "WA" },
+  { testcase = "2", expect = "WA" },
+  { testcase = "3", expect = "WA" },
+]
+
+[[execs]]
+filename = "busker_spfa_wa.cpp"
+overwrite = { prob_id = "busker" }
+tests = [
+  { testcase = "1", expect = "RE" },
+  { testcase = "2", expect = "RE" },
+  { testcase = "3", expect = "RE" },
+]
+
+[[execs]]
+filename = "car_nlgw.cpp"
+overwrite = { prob_id = "car" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "car_nw.cpp"
+overwrite = { prob_id = "car" }
+tests = [
+  { testcase = "1", expect = "TLE" },
+  { testcase = "2", expect = "AC" },
+  { testcase = "3", expect = "TLE" },
+]
+
+[[execs]]
+filename = "car_nwnn.cpp"
+overwrite = { prob_id = "car" }
+tests = [
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "AC" },
+  { testcase = "3", expect = "TLE" },
+]
+
+[[execs]]
+filename = "colosseum_n2.py"
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "TLE" },
+  { testcase = "3", expect = "TLE" },
+  { testcase = "4", expect = "TLE" },
+]
+[execs.overwrite]
+prob_id = "colosseum"
+compile = "echo 'OAO'"
+execute = "/usr/bin/env python3 colosseum_n2.py"
+
+[[execs]]
+filename = "colosseum_n2lgn.cpp"
+overwrite = { prob_id = "colosseum" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "TLE" },
+  { testcase = "3", expect = "TLE" },
+  { testcase = "4", expect = "TLE" },
+]
+
+[[execs]]
+filename = "fruit_cccn.cpp"
+overwrite = { prob_id = "fruit" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "fruit_cct.cpp"
+overwrite = { prob_id = "fruit" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "AC" },
+  { testcase = "3", expect = "TLE" },
+]
+
+[[execs]]
+filename = "pineapple_pbds.cpp"
+overwrite = { prob_id = "pineapple" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "pineapple_pbds_split.cpp"
+overwrite = { prob_id = "pineapple" }
+tests = [
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "TLE" },
+]
+
+[[execs]]
+filename = "puipui.cpp"
+overwrite = { prob_id = "puipui" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "puipui_nlgmlgn.cpp"
+overwrite = { prob_id = "puipui" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "AC" },
+  { testcase = "3", expect = "TLE" },
+  { testcase = "4", expect = "TLE" },
+]
+
+[[execs]]
+filename = "rail.cpp"
+overwrite = { prob_id = "rail" }
+tests = [{ testcase = "all", expect = "AC" }]

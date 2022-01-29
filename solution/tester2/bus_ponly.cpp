@@ -1,0 +1,36 @@
+// WA: only check distances between points
+#include<bits/stdc++.h>
+#define REP(x,y,z) for(int x=y;x<=z;x++)
+#define MSET(x,y) memset(x,y,sizeof(x))
+#define M 105
+using namespace std;
+using I128 = __int128;
+int n, cx, cy;
+int xp[M], yp[M];
+I128 ax, ay;
+I128 dis2(I128 x, I128 y) {
+    return x*x + y*y;
+}
+void update_answer(I128 tx, I128 ty) {
+    I128 g = abs(__gcd(tx, ty));
+    tx /= g;
+    ty /= g;
+    if (ay == 0 || tx * ay < ax * ty) {
+        ax = tx;
+        ay = ty;
+    }
+}
+int main()
+{
+    while (~scanf("%d %d %d", &cx, &cy, &n)) {
+        REP(i,1,n+1) scanf("%d %d", &xp[i], &yp[i]);
+
+        ax = 0;
+        ay = 0;
+        REP(i,1,n+1) {
+            update_answer(dis2(cx-xp[i], cy-yp[i]), 1);
+        }
+        printf("%.10f\n", (double)sqrt((long double)ax/ay));
+    }
+    return 0;
+}

@@ -1,0 +1,194 @@
+[[execs]]
+filename = "rail.cc"
+overwrite = { prob_id = "rail" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "rail_recursive.cc"
+overwrite = { prob_id = "rail" }
+tests = [
+  { testcase = "0", expect = "TLE" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "TLE" },
+  { testcase = "3", expect = "TLE" },
+  { testcase = "4", expect = "TLE" },
+]
+
+[[execs]]
+filename = "rail_n2.cc"
+overwrite = { prob_id = "rail" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "AC" },
+  { testcase = "3", expect = "TLE" },
+  { testcase = "4", expect = "TLE" },
+]
+
+[[execs]]
+filename = "rail_n.cc"
+overwrite = { prob_id = "rail" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "AC" },
+  { testcase = "3", expect = "AC" },
+  { testcase = "4", expect = "TLE" },
+]
+
+[[execs]]
+filename = "puipui.cc"
+overwrite = { prob_id = "puipui" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "barbershop.cc"
+overwrite = { prob_id = "barbershop" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "barbershop_nosort.cc"
+overwrite = { prob_id = "barbershop" }
+tests = [{ testcase = "all", expect = "WA" }]
+
+[[execs]]
+filename = "bus.cc"
+overwrite = { prob_id = "bus" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "bus_err.cc"
+overwrite = { prob_id = "bus" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "bus_int.cc"
+overwrite = { prob_id = "bus" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "WA" },
+  { testcase = "3", expect = "WA" },
+]
+
+[[execs]]
+filename = "bus_ole.cc"
+overwrite = { prob_id = "bus" }
+tests = [
+  { testcase = "0", expect = "WA" },
+  { testcase = "1", expect = "WA" },
+  { testcase = "2", expect = "WA" },
+  { testcase = "3", expect = "WA" },
+]
+
+[[execs]]
+filename = "busker.cc"
+overwrite = { prob_id = "busker" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "busker_vin_vout.cc"
+overwrite = { prob_id = "busker" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+# TODO: adjust threshold
+[[execs]]
+filename = "busker_bad_count.cc"
+overwrite = { prob_id = "busker" }
+tests = [
+  { testcase = "1", expect = "RE" },
+  { testcase = "2", expect = "RE" },
+  { testcase = "3", expect = "RE" },
+]
+
+# TODO: adjust threshold
+[[execs]]
+filename = "busker_bad_count_rev.cc"
+overwrite = { prob_id = "busker" }
+tests = [
+  { testcase = "1", expect = "RE" },
+  { testcase = "2", expect = "RE" },
+  { testcase = "3", expect = "RE" },
+]
+
+# TODO: adjust threshold
+[[execs]]
+filename = "busker_bad_count_sort.cc"
+overwrite = { prob_id = "busker" }
+tests = [
+  { testcase = "1", expect = "RE" },
+  { testcase = "2", expect = "RE" },
+  { testcase = "3", expect = "RE" },
+]
+
+[[execs]]
+filename = "busker_positive.cc"
+overwrite = { prob_id = "busker" }
+tests = [
+  { testcase = "1", expect = "WA" },
+  { testcase = "2", expect = "WA" },
+  { testcase = "3", expect = "WA" },
+]
+
+[[execs]]
+filename = "busker_positive_map_int128.cc"
+overwrite = { prob_id = "busker" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+# TODO: make unit test pass
+[[execs]]
+filename = "busker_positive_map_long.cc"
+overwrite = { prob_id = "busker" }
+tests = [
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "AC" },
+  { testcase = "3", expect = "AC" }, ## ???????
+]
+
+[[execs]]
+filename = "car.cc"
+overwrite = { prob_id = "car" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "pineapple.cc"
+overwrite = { prob_id = "pineapple" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "fruit.cc"
+overwrite = { prob_id = "fruit" }
+tests = [{ testcase = "all", expect = "AC" }]
+
+[[execs]]
+filename = "colosseum_n2w.cc"
+overwrite = { prob_id = "colosseum" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "TLE" },
+  { testcase = "3", expect = "TLE" },
+  { testcase = "4", expect = "TLE" },
+]
+
+[[execs]]
+filename = "colosseum_n2w_parallel.cc"
+overwrite = { prob_id = "colosseum" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "TLE" },
+  { testcase = "3", expect = "TLE" },
+  { testcase = "4", expect = "TLE" },
+]
+
+[[execs]]
+filename = "colosseum_n2wlognw.cc"
+overwrite = { prob_id = "colosseum" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "TLE" },
+  { testcase = "3", expect = "TLE" },
+  { testcase = "4", expect = "TLE" },
+]
