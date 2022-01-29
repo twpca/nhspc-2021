@@ -1,0 +1,59 @@
+[[execs]]
+filename = "busker_nnn_nk.cpp"
+overwrite = { prob_id = "busker" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "AC" },
+  { testcase = "3", expect = "TLE" },
+]
+
+[[execs]]
+filename = "busker_nnn_nnkk.cpp"
+overwrite = { prob_id = "busker" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "AC" },
+  { testcase = "3", expect = "TLE" },
+]
+
+[[execs]]
+filename = "busker_nm_nk.cpp"
+overwrite = { prob_id = "busker" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "AC" },
+  { testcase = "3", expect = "AC" },
+]
+
+[[execs]]
+filename = "fruit.cpp"
+overwrite = { prob_id = "fruit" }
+tests = [
+  { testcase = "0", expect = "WA" },
+  { testcase = "1", expect = "WA" },
+  { testcase = "2", expect = "WA" },
+  { testcase = "3", expect = "TLE" },
+]
+
+[[execs]]
+filename = "fruit_brute_force.cpp"
+overwrite = { prob_id = "fruit" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "TLE" },
+  { testcase = "3", expect = "TLE" },
+]
+
+[[execs]]
+filename = "fruit_cctlogt_with_cut.cpp"
+overwrite = { prob_id = "fruit" }
+tests = [
+  { testcase = "0", expect = "AC" },
+  { testcase = "1", expect = "AC" },
+  { testcase = "2", expect = "AC" },
+  { testcase = "3", expect = "TLE" },
+]
