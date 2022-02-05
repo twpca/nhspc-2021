@@ -242,7 +242,7 @@ $\begin{align}\beta_i = \min_{i \le k \le \|V(C)\|} s(i).\end{align}$
 由於每一層只要達到門檻數量的金幣就會發生戰鬥，可以用一個 queue Q 來儲存金幣數 f 與時間 s，並依序考慮第 1 層到第 n 層。
 
 加入第 i 層時，先把 (0, 0) 插入 Q 的後端，接著將 f ≥ y<sub>i</sub> 的 (f, s) 們全部加上 (w<sub>i</sub>, t<sub>i</sub>)，最後再從 Q 的前端踢掉 s > m 的那些 (f, s) 們。
-可以得到一個 O(n<sup>2</sup>) 時間複雜度的做法，可以用 [Fenwick tree](https://en.wikipedia.org/wiki/Fenwick_tree) 進一步加速到 O(n log n)。
+可以得到一個 O(n<sup>2</sup>) 時間複雜度的做法，再用 [Fenwick tree](https://en.wikipedia.org/wiki/Fenwick_tree) 進一步加速到 O(n log n)。
 
 ----
 
@@ -267,8 +267,8 @@ $\begin{align}\beta_i = \min_{i \le k \le \|V(C)\|} s(i).\end{align}$
 最佳解是從第 2 層出發，第 3 層等待，最後得到的 1011 枚金幣（這時離開第 3 層的時間與金幣數分別為 4 與 11）。
 另一方面，若從第 1 層出發且第 3 層不等待，則離開第 3 層的時間與金幣數分別為 2 與 110，看似比前者為優，但因過了 y<sub>4</sub> = 110 的門檻被強迫參加第 4 層的競技，最後只能拿到 111 枚金幣。
 
-由於比賽時的測試資料是隨機生成的，這種測資需要特別構造。
-在跑了時間複雜度 O(n Σw<sub>i</sub>) 的解後，最後在我們的機器上平行跑 12 小時終於確認比賽時的輸入輸出都是對的，只是這個執行時間根本不可能過得了時限。
+基本上這種測試資料需要特別構造。
+由於比賽時的測資是隨機生成的，在跑了時間複雜度 O(n Σw<sub>i</sub>) 的解後，在我們的機器上平行跑 12 小時終於確認比賽時的輸入輸出都是對的，只是這個執行時間根本不可能過得了時限。
 
 ---
 
@@ -421,7 +421,7 @@ $\begin{align} g(\sigma^{\*}\|\_{n-1}; \mathbf{h}) \ge h_{n-1} - h_{n-3} \ge h_{
 另一方面，對於任意 $\sigma \in S_n$，我們本來就有
 
 $$\begin{align}\begin{cases} g(\sigma; \mathbf{h}) \ge h_n - h_{n-2}, \\\
-g(\sigma; \mathbf{h}) \ge g(\sigma\|_{n-1}; \mathbf{h}). \end{cases}\end{align}$$
+g(\sigma; \mathbf{h}) \ge g(\sigma|_{n-1}; \mathbf{h}). \end{cases}\end{align}$$
 
 所以可以分兩種情況：
 
