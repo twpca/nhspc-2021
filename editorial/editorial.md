@@ -111,8 +111,7 @@ $\begin{align}s(k) = \min_{0 \le i \le \|V(C)\|} s(i).\end{align}$
 到前面為止，已經證明了任意一個非負環必定存在一個好起點（也就是題目所求的入能敷出演藝路線）。
 這裡假設讀者已經很熟悉 O(VE) [找負環的技巧](https://konaeakira.github.io/posts/using-the-shortest-path-faster-algorithm-to-find-negative-cycles.html)。
 
-接著來處理題目的另一個詢問，也就是環上共有幾個好的起點。
-以下將介紹兩種方法：
+接著來處理題目的另一個詢問，也就是環上共有幾個好起點。
 
 ----
 
@@ -155,7 +154,7 @@ $\begin{align}\beta_i = \min_{i \le k \le \|V(C)\|} s(i).\end{align}$
 ### Subtask 1: n ≤ 20
 
 直接建立 G，注意我們有 \|V(G)\| = n + mk = O(n<sup>3</sup>) 且 \|E(G)\| = m(k+1) = O(n<sup>3</sup>)。
-對於每條邊 (u, v)，轉移權重 (u)：
+對於每條邊 (u, v)，轉移權重 c(u)：
 
 [圖片待補]
 
