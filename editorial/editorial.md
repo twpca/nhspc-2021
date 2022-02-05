@@ -95,7 +95,7 @@ $\begin{align}s(k) = \min_{0 \le i \le \|V(C)\|} s(i).\end{align}$
 
 接著證明 u<sub>k + 1</sub> 是一個好起點。
 
-對於所有的 i ∈ { k + 1, k + 2, …, V(C) }，
+對於所有的 i ∈ { k + 1, k + 2, …, \|V(C)\| }，
 從 u<sub>k + 1</sub> 出發沿著 C 走到 u<sub>i</sub> 的點權重和是 s(i) - s(k)，
 但 s(k) ≤ s(i)，
 故 s(i) - s(k) ≥ 0。
