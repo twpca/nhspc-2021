@@ -85,7 +85,7 @@ $\begin{align}s(i) = \begin{cases}0,&\text{if }i=0,\\\ c(u_1) + c(u_2) + \ldots 
 
 考慮路途任一所持金最小的時刻 k ∈ {0, 1, …, \|V(C)\| - 1}，也就是 k 滿足
 
-$\begin{align}s(k) = \min_{0 \le i \le \|V(C)\| - 1} \\{s(i)\\}.\end{align}$
+$\begin{align}s(k) = \min_{0 \le i \le \|V(C)\| - 1} s(i).\end{align}$
 
 注意我們有 s(\|V(C)\|) ≥ 0 = s(0)，因此
 
@@ -379,7 +379,7 @@ $\begin{align}\max_{1 \le i \le k} \left\| a_{(i\operatorname{mod}k)+1} - a_i \r
 上式和題目所求的環狀數列最大高度差等價。
 現在給定 $n$ 個數 $h_1, h_2, \ldots, h_n$，想要從裡面抓出 $p$ 個 $k$ 項的數列 $\mathbf{a_1}, \mathbf{a_2}, \ldots, \mathbf{a_p}$（當然我們有 $n\ge pk$）。請問
 
-$\begin{align}\max_{1\le i\le p}\\{f(\mathbf{a_i})\\}\end{align}$
+$\begin{align}\max_{1\le i\le p}f(\mathbf{a_i})\end{align}$
 
 的最小值是多少？
 
