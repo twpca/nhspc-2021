@@ -1,0 +1,17 @@
+\documentclass[tikz,convert={outfile=\jobname.svg}]{standalone}
+\begin{document}
+   \begin{tikzpicture}
+      \begin{scope}
+         \filldraw ([xshift=-0.5pt, yshift=-0.5pt]0, 0) rectangle ++(1pt, 1pt) node[anchor=east]{$c(u)$};
+         \filldraw ([xshift=-0.5pt, yshift=-0.5pt]5, 0) rectangle ++(1pt, 1pt) node[anchor=west]{$c(v)$};
+         \draw[->] (0, 0) -- (5, 0);
+      \end{scope}
+      \begin{scope}[yshift=-4cm]
+         \filldraw ([xshift=-0.5pt, yshift=-0.5pt]0, 0) rectangle ++(1pt, 1pt) node[anchor=east]{$u$};
+         \filldraw ([xshift=-0.5pt, yshift=-0.5pt]5, 0) rectangle ++(1pt, 1pt) node[anchor=west]{$v$};
+         \filldraw (2.5, 0) node[draw=none, fill=none, anchor=south]{$c(u)$};
+         \draw[->] (0, 0) -- (5, 0);
+      \end{scope}
+      \draw[->, red](2.5, -1) -- (2.5, -3);
+   \end{tikzpicture}
+\end{document}
