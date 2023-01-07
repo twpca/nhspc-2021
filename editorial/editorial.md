@@ -156,7 +156,7 @@ $\begin{align}\beta_i = \min_{i \le k \le \|V(C)\|} s(i).\end{align}$
 直接建立 G，注意我們有 \|V(G)\| = n + mk = O(n<sup>3</sup>) 且 \|E(G)\| = m(k+1) = O(n<sup>3</sup>)。
 對於每條邊 (u, v)，轉移權重 c(u)：
 
-[圖片待補]
+![busker1](../tikz/busker1.svg)
 
 我們用 Bellman-Ford 演算法找出一個非負環，時間複雜度為 O(\|V(G)\|\|E(G)\|) = O(n<sup>6</sup>)。
 
@@ -174,7 +174,7 @@ $\begin{align}\beta_i = \min_{i \le k \le \|V(C)\|} s(i).\end{align}$
 設 (u, v) ∈ E(G<sub>0</sub>) 且在 G 上被加入的點權重分別是 a<sub>1</sub>, a<sub>2</sub>, …, a<sub>k</sub>，
 則我們直接轉移權重 c(u) + Σa<sub>i</sub> 到 (u, v) 上：
 
-[圖片待補]
+![busker2](../tikz/busker2.svg)
 
 如此一來 Bellman-Ford 的時間就降為 O(mn)。
 
@@ -452,7 +452,7 @@ g(\sigma; \mathbf{h}) \ge g(\sigma|_{n-1}; \mathbf{h}). \end{cases}\end{align}$$
 
 令 D<sub>i</sub> 為 L=i 時的方法數。對於任何一張合法的圖，我們從左邊到右邊找出第一個不會切到迴圈的鉛直線：
 
-[圖片待補]
+![rail](../tikz/rail.svg)
 
 可以發現若鉛直線切出的寬度是 l 與 i-l，
 則被切出 l 的那邊有 2l - 3 種填滿的方式，這樣一來我們就有
